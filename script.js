@@ -183,6 +183,6 @@ if (profileBtnBottom) {
 const yourStoryBtn = document.querySelector('.story--add-story');
 if (yourStoryBtn) {
   yourStoryBtn.addEventListener('click', () => {
-    alert('Fitur tambah story belum aktif.');
+    window.location.href = 'yourstory.html';
   });
 }
