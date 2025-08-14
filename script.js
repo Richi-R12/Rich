@@ -175,7 +175,7 @@ postsContent.forEach((post) => {
 const profileBtnBottom = document.querySelector('.navbar .profile-button');
 if (profileBtnBottom) {
   profileBtnBottom.addEventListener('click', () => {
-    alert('Menuju halaman profile...');
+    window.location.href = 'profile.html';
   });
 }
 
