@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - Instagram Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: var(--primary);
+    }
+    .profile-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      position: relative;
+    }
+    .profile-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .profile-info h2 {
+      font-size: 20px;
+      color: var(--text-dark);
+    }
+    .profile-stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+    }
+    .profile-stats div {
+      text-align: center;
+    }
+    .profile-stats span {
+      font-weight: bold;
+      color: var(--text-dark);
+    }
+    .profile-bio {
+      padding: 0 20px 20px;
+      font-size: 14px;
+      color: var(--text-dark);
+    }
+    .profile-posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .profile-posts img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__content">
+      <a href="index.html" style="margin-right: 16px; text-decoration:none; color: var(--text-dark); font-size: 14px;">← Back</a>
+      <a href="index.html" class="header__home">
+        <h1 style="font-size: 18px; color: var(--text-dark);">Instagram Clone</h1>
+      </a>
+    </nav>
+  </header>
+
+  <main style="margin-top: var(--header-height);">
+    <div class="profile-header">
+      <div class="profile-avatar">
+        <img src="assets/default-user.png" alt="User" />
+      </div>
+      <div class="profile-info">
+        <h2>ricr.ivy</h2>
+        <div class="profile-stats">
+          <div><span>10</span><br>Posts</div>
+          <div><span>250</span><br>Followers</div>
+          <div><span>180</span><br>Following</div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-bio">
+      Ini adalah bio pengguna. Kamu bisa mengubah teks ini sesuai kebutuhan.
+    </div>
+    <div class="profile-posts">
+      <img src="assets/insta-clone.png" alt="Post 1" />
+      <img src="assets/insta-clone.png" alt="Post 2" />
+      <img src="assets/insta-clone.png" alt="Post 3" />
+      <img src="assets/insta-clone.png" alt="Post 4" />
+      <img src="assets/insta-clone.png" alt="Post 5" />
+      <img src="assets/insta-clone.png" alt="Post 6" />
+    </div>
+  </main>
+</body>
+</html>
