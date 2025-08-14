@@ -169,3 +169,20 @@ postsContent.forEach((post) => {
     }
   }
 });
+
+
+// Profile button di navbar bawah
+const profileBtnBottom = document.querySelector('.navbar .profile-button');
+if (profileBtnBottom) {
+  profileBtnBottom.addEventListener('click', () => {
+    alert('Menuju halaman profile...');
+  });
+}
+
+// Your Story click event
+const yourStoryBtn = document.querySelector('.story--add-story');
+if (yourStoryBtn) {
+  yourStoryBtn.addEventListener('click', () => {
+    alert('Fitur tambah story belum aktif.');
+  });
+}

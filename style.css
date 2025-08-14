@@ -884,3 +884,20 @@ img {
     display: flex;
   }
 }
+
+.story__add-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--link);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
+}
